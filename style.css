@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url("red.jpg");
+  background-size: cover;
+}
+
+
+.Container {
+  width: 80%;
+  margin: auto;
+
+}
+
+/* Header Start */
+
+header {
+  height: 100px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+header nav .logo a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  column-gap: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color .25s ease;
+
+}
+
+nav ul li a:hover {
+  color: #0ba2c0;
+
+}
+
+nav .Menu {
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+}
+
+nav .Menu .Menu-Button {
+  color: #0ba2c0;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 12px 24px;
+  border-radius: 56px;
+  transition: all .25s ease;
+
+}
+
+nav .Menu .Menu-Button:hover {
+  background-color: #0ba2c0;
+  color: white;
+
+
+}
+
+/* Header And */
+
+/* section start */
+.content {
+  color: white;
+  height: calc(100vh - 100px);
+  padding-top: 150px;
+
+}
+
+.content h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+.content p {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.content .Links {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+  column-gap: 16px;
+}
+
+.content .Links a {
+  background-color: white;
+  padding: 20px;
+  width: 280px;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 56px;
+  transition: all .25s ease-in;
+
+}
+
+.content .Links a:hover {
+  background-color: #0ba2c0;
+  color: white;
+
+}
+
+/* section and */
+
+/* responsive start */
+
+@media(max-width: 576px) {
+  .Container {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.Menu ul {
+  column-gap: 20px;
+}
+
+
+.content {
+  padding-top: 50px;
+}
+
+.content h1 {
+  font-size: 36px;
+}
+
+.content p {
+  font-size: 16px;
+}
+
+
+.content .Links a {
+  padding: 14px;
+}
+
+/* responsive end */
